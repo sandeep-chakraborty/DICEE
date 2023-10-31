@@ -9,11 +9,11 @@ var diceImageFilename2 = `images/dice${randomNumber2}.png`;
 leftDiceImage.setAttribute("src", diceImageFilename);
 RightDiceImage.setAttribute("src", diceImageFilename2);
 if (randomNumber1 > randomNumber2) {
-  document.querySelector("h1").textContent = "🚩Player 1 wins";
+    document.getElementsByClassName("Results")[0].textContent = "🚩Player 1 wins";
 } else if (randomNumber2 > randomNumber1) {
-  document.querySelector("h1").textContent = "🚩Player 2 wins";
+    document.getElementsByClassName("Results")[0].textContent = "🚩Player 2 wins";
 } else {
-  document.querySelector("h1").textContent = "Draw:(";
+    document.getElementsByClassName("Results")[0].textContent= "Draw:(";
 }
 
   var reloadButton = document.getElementsByClassName("button")[0];
