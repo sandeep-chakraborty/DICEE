@@ -15,9 +15,9 @@ if (randomNumber1 > randomNumber2) {
 } else {
   document.querySelector("h1").textContent = "Draw:(";
 }
-document.addEventListener("DOMContentLoaded", function () {
+
   var reloadButton = document.getElementsByClassName("button")[0];
   reloadButton.addEventListener("click", function () {
     location.reload();
   });
-});
+
